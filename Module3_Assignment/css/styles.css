@@ -4,10 +4,15 @@ body {
 	background-color:#6B6B69;
 	font-family: 'Oxygen', sans-serif;
 }
-	
+h1 {
+	margin-bottom: 15px;
+	margin-top: 10px;
+	text-align: center;
+	color: #ffffff;
+}	
 	
 /** HEADER **/
-#nav-header {
+#header-nav {
 	background-color: #2C6906;
 	border-radius: 0;
 	border: 0;
@@ -21,11 +26,10 @@ body {
 	font-size: 1.5em;
 	text-transform: uppercase;
 	font-weight: bold;
-	text-shadow: 1px 1px 1px #222;
+	text-shadow: 1px 2px 1px #222;
 	margin-top: 0;
 	margin-bottom: 0;
 	line-height: .75;
-	text-align: left;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
 	text-decoration: none;
@@ -79,8 +83,13 @@ body {
 
 
 .row {
+	box-sizing: border-box;
 	margin-bottom: 15px;	
 	width: 100%;
+	padding: 15px;
+	overflow: auto;
+	text-align: left;
+	display: block;
 }
 .row > div {
 	border: 2px solid black;
@@ -94,21 +103,30 @@ body {
 .section {
 	text-align: center;
 	font-size: 18px;
+	margin-bottom: 10px;
+	display: block;
 }
 /***** Large devices *****/
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
+	.col-lg-1 {
+		padding: 15px;
+		margin: 15px;
+	}
 	
 }
 /***** Medium devices *****/
-@media (min-width: 992px) and (max-width: 1199px) {
-	
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-1{
+		padding: 15px;
+	}
 }
 /***** Small devices *****/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 568px) and (max-width: 767px) {
+	
 	
 }
 /***** Extra-small devices *****/
-@media (max-width: 767px) {
+@media (max-width: 567px) {
 	.navbar-brand {
 		padding-top: 10px;
 		height: 80px;
